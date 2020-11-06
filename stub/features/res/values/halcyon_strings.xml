@@ -291,4 +291,8 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
     <string name="theme_customization_icon_pack_title">Icon pack</string>
 
+    <!-- Lockscreen battery info indicator -->
+    <string name="lockscreen_battery_info_title">Charging Info on Lock Screen</string>
+    <string name="lockscreen_battery_info_summary">Show current, voltage, wattage, and temperature while charging</string>
+
 </resources>
