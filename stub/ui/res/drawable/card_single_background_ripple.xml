@@ -9,5 +9,5 @@
           android:topRightRadius="@dimen/halcyon_card_radius" />
 			</shape>
 		</item>
-		<item android:drawable="@drawable/card_top_background" />
+		<item android:drawable="@drawable/card_single_background" />
 </ripple>

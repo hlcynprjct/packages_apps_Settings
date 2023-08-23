@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Cards -->
+    <style name="halcyon_cardview_text_primary">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+
+    <!-- Cards -->
+    <style name="halcyon_about_cardview_text_primary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+
+    <!-- Cards -->
+    <style name="halcyon_about_cardview_text_secondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginTop">1sp</item>
+        <item name="android:layout_marginBottom">1sp</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+
+    <style name="TextAppearance.halcyonInfoTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.halcyonInfoSummary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:fontFamily">sans-serif-book</item>
+    </style>
+
+    <style name="HalcyonAboutPhonHeader">
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginEnd">18dp</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="TextAppearance_halcyonCoolBranding">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:textSize">48dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+    </style>
+
+</resources>

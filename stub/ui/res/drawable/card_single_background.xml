@@ -4,5 +4,7 @@
     <solid android:color="@color/card_background_surface" />
     <corners
       android:topLeftRadius="@dimen/halcyon_card_radius" 
-      android:topRightRadius="@dimen/halcyon_card_radius" />
+      android:topRightRadius="@dimen/halcyon_card_radius" 
+      android:bottomLeftRadius="@dimen/halcyon_card_radius" 
+      android:bottomRightRadius="@dimen/halcyon_card_radius" />
 </shape>

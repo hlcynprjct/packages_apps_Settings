@@ -12,5 +12,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Ver cool Halcyon Nranding -->
+    <string name="very_cool_branding">h.</string>
+    <string name="very_cool_version">Ursinia</string>
 
+    <!-- About Phone -->
+    <string name="keywords_top_level_device_info">about phone, halcyon, device name</string>
+    <string name="more_device_info">More info</string>
+    <string name="more_device_info_summary">Show more info of the device</string>
+
+    <!-- About Phone Header -->
+    <string name="halcyon_device_title">Device</string>
+    <string name="halcyon_memory_storage_title">Memory</string>
+    <string name="halcyon_battery_size_title">Battery Capacity</string>
+    <string name="halcyon_screen_res_title">Screen Resolution</string>
+
+        <!-- My Device - Phone Number Category -->
+    <string name="sim_num_info_cat">Phone number</string>
 </resources>

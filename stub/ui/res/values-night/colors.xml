@@ -5,4 +5,6 @@
 
     <color name="halcyon_card_bg">@android:color/system_neutral2_700</color>
 
+    <color name="halcyon_about_icon_bg">@android:color/system_neutral2_400</color>
+
 </resources>
