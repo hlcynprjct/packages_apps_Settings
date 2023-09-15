@@ -34,5 +34,4 @@
     <dimen name="halcyon_hw_info_icons">30dp</dimen>
     <dimen name="halcyon_vertical_padding">20dp</dimen>
     <dimen name="halcyon_cool_branding_half_height">40dp</dimen>
-
 </resources>
