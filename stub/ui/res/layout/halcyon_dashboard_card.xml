@@ -43,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
+                android:layout_marginEnd="18dp"
                 style="@style/halcyon_cardview_text_primary" />
 
             <TextView
@@ -60,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
                 android:src="@drawable/ic_arrow_back_ui" />
 
         </RelativeLayout>
