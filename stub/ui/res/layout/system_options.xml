@@ -32,7 +32,7 @@
             android:layout_marginTop="15.0dip">
             <LinearLayout 
                 android:id="@+id/language_settings"
-                android:background="@drawable/about_header_background"
+                android:background="@drawable/tile_pref_background"
                 android:gravity="center_vertical"
                 android:orientation="vertical" 
                 android:paddingTop="20.0dip" 
@@ -53,14 +53,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5.0dip"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
                         android:text="@string/language_settings"
-                        android:paddingTop="40.0dip" 
+                        android:paddingTop="20.0dip" 
                         style="@style/TextAppearance.halcyonTileTitle"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="@string/launch_instant_app"
+                        android:layout_marginTop="5.0dip"
+                        style="@style/TextAppearance.halcyonInfoSummary"/>
             </LinearLayout>
 
             <LinearLayout 
                 android:id="@+id/gesture_settings"
-                android:background="@drawable/about_header_background"
+                android:background="@drawable/tile_pref_background"
                 android:gravity="center_vertical"
                 android:orientation="vertical" 
                 android:paddingTop="20.0dip" 
@@ -82,9 +92,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5.0dip"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
                         android:text="@string/gesture_preference_title"
-                        android:paddingTop="40.0dip" 
+                        android:paddingTop="20.0dip" 
                         style="@style/TextAppearance.halcyonTileTitle"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="@string/launch_instant_app"
+                        android:layout_marginTop="5.0dip"
+                        style="@style/TextAppearance.halcyonInfoSummary"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -95,7 +115,7 @@
             android:layout_marginTop="15.0dip">
             <LinearLayout 
                 android:id="@+id/time_settings"
-                android:background="@drawable/about_header_background"
+                android:background="@drawable/tile_pref_background"
                 android:gravity="center_vertical"
                 android:orientation="vertical" 
                 android:paddingTop="20.0dip" 
@@ -117,14 +137,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5.0dip"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
                         android:text="@string/date_and_time"
-                        android:paddingTop="40.0dip" 
+                        android:paddingTop="20.0dip" 
                         style="@style/TextAppearance.halcyonTileTitle"/>
+                    <TextView 
+                        android:id="@+id/battery_size_summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="@string/launch_instant_app"
+                        android:layout_marginTop="5.0dip"
+                        style="@style/TextAppearance.halcyonInfoSummary"/>
             </LinearLayout>
 
             <LinearLayout 
                 android:id="@+id/reset_settings"
-                android:background="@drawable/about_header_background"
+                android:background="@drawable/tile_pref_background"
                 android:gravity="center_vertical"
                 android:orientation="vertical" 
                 android:paddingTop="20.0dip" 
@@ -147,9 +178,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5.0dip"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
                         android:text="@string/reset_dashboard_title"
-                        android:paddingTop="40.0dip" 
+                        android:paddingTop="20.0dip" 
                         style="@style/TextAppearance.halcyonTileTitle"/>
+                    <TextView 
+                        android:id="@+id/screen_res_summary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:singleLine="true"
+                        android:text="@string/launch_instant_app"
+                        android:layout_marginTop="5.0dip"
+                        style="@style/TextAppearance.halcyonInfoSummary"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
