@@ -25,7 +25,15 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
+
+import com.android.settings.system.HalcyonSystemOptController;
+
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 @SearchIndexable
 public class SystemDashboardFragment extends DashboardFragment {
@@ -41,6 +49,18 @@ public class SystemDashboardFragment extends DashboardFragment {
         if (getVisiblePreferenceCount(screen) == screen.getInitialExpandedChildrenCount() + 1) {
             screen.setInitialExpandedChildrenCount(Integer.MAX_VALUE);
         }
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return HalcyonSystemPreferenceControllers(context, this /* fragment */, getSettingsLifecycle());
+    }
+
+    private static List<AbstractPreferenceController> HalcyonSystemPreferenceControllers(
+            Context context, SystemDashboardFragment fragment, Lifecycle lifecycle) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new HalcyonSystemOptController(context));
+        return controllers;
     }
 
     @Override

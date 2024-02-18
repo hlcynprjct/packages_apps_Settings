@@ -31,7 +31,7 @@ public class DateTimePreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return UNSUPPORTED_ON_DEVICE;
     }
 
     @Override

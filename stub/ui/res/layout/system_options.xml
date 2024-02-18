@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2021-2023 Halcyon Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+         http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<LinearLayout 
+    android:id="@+id/halcyon_system_opt"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip">
+            <LinearLayout 
+                android:id="@+id/language_settings"
+                android:background="@drawable/about_header_background"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:paddingTop="20.0dip" 
+                android:paddingBottom="20.0dip" 
+                android:layout_marginLeft="@dimen/halcyon_card_side_margin" 
+                android:paddingStart="@dimen/halcyon_card_side_margin" 
+        		android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="5.0">
+                    <ImageView
+                        android:src="@drawable/ic_halcyon_language"
+                        android:gravity="start" 
+                        android:layout_gravity="start" 
+                        android:layout_width="@dimen/halcyon_hw_info_icons"
+                        android:layout_height="@dimen/halcyon_hw_info_icons" />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/language_settings"
+                        android:paddingTop="40.0dip" 
+                        style="@style/TextAppearance.halcyonTileTitle"/>
+            </LinearLayout>
+
+            <LinearLayout 
+                android:id="@+id/gesture_settings"
+                android:background="@drawable/about_header_background"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:paddingTop="20.0dip" 
+                android:paddingBottom="20.0dip" 
+                android:layout_marginLeft="@dimen/halcyon_card_side_margin" 
+        		android:layout_marginRight="@dimen/halcyon_card_side_margin"
+                android:paddingStart="@dimen/halcyon_card_side_margin" 
+        		android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="5.0">
+                    <ImageView
+                        android:src="@drawable/ic_halcyon_gesture"
+                        android:gravity="start" 
+                        android:layout_gravity="start" 
+                        android:layout_width="@dimen/halcyon_hw_info_icons"
+                        android:layout_height="@dimen/halcyon_hw_info_icons" />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/gesture_preference_title"
+                        android:paddingTop="40.0dip" 
+                        style="@style/TextAppearance.halcyonTileTitle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip">
+            <LinearLayout 
+                android:id="@+id/time_settings"
+                android:background="@drawable/about_header_background"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:paddingTop="20.0dip" 
+                android:paddingBottom="20.0dip" 
+                android:layout_marginLeft="@dimen/halcyon_card_side_margin" 
+                android:paddingStart="@dimen/halcyon_card_side_margin" 
+        		android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="5.0">
+                    <ImageView
+                        android:src="@drawable/ic_halcyon_time"
+                        android:gravity="start" 
+                        android:layout_gravity="start" 
+                        android:layout_width="@dimen/halcyon_hw_info_icons"
+                        android:layout_height="@dimen/halcyon_hw_info_icons" />
+                    <TextView 
+                        android:id="@+id/battery_size_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/date_and_time"
+                        android:paddingTop="40.0dip" 
+                        style="@style/TextAppearance.halcyonTileTitle"/>
+            </LinearLayout>
+
+            <LinearLayout 
+                android:id="@+id/reset_settings"
+                android:background="@drawable/about_header_background"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:paddingTop="20.0dip" 
+                android:paddingBottom="20.0dip" 
+                android:layout_marginLeft="@dimen/halcyon_card_side_margin" 
+        		android:layout_marginRight="@dimen/halcyon_card_side_margin"
+                android:paddingStart="@dimen/halcyon_card_side_margin" 
+        		android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:layout_weight="5.0">
+                    <ImageView
+                        android:src="@drawable/ic_halcyon_reset"
+                        android:gravity="start" 
+                        android:layout_gravity="start" 
+                        android:layout_width="@dimen/halcyon_hw_info_icons"
+                        android:layout_height="@dimen/halcyon_hw_info_icons" />                 
+                    <TextView 
+                        android:id="@+id/screen_res_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/reset_dashboard_title"
+                        android:paddingTop="40.0dip" 
+                        style="@style/TextAppearance.halcyonTileTitle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

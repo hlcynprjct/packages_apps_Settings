@@ -5428,5 +5428,47 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
+
+        <!-- System gesture -->
+        <activity android:name="Settings$SystemGestureActivity"
+                android:label="@string/gesture_preference_title"
+                android:theme="@style/Theme.SubSettingsBase"
+                android:enabled="true"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:taskAffinity="com.android.settings"
+                android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.gestures.GestureSettings" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
+        <!-- Factory Reset -->
+        <activity android:name="Settings$SystemResetActivity"
+                android:label="@string/reset_dashboard_title"
+                android:theme="@style/Theme.SubSettingsBase"
+                android:enabled="true"
+                android:exported="true"
+                android:excludeFromRecents="true"
+                android:taskAffinity="com.android.settings"
+                android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.system.ResetDashboardFragment" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
     </application>
 </manifest>

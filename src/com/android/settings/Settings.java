@@ -517,4 +517,10 @@ public class Settings extends SettingsActivity {
     public static class HearingDevicesPairingActivity extends SettingsActivity { /* empty */ }
 
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
+    /**
+     * halcyonUI Addition
+     */
+    public static class SystemGestureActivity extends SettingsActivity { /* empty */ }
+    public static class SystemResetActivity extends SettingsActivity { /* empty */ }
 }

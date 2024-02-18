@@ -126,6 +126,7 @@ import com.android.settings.gestures.GestureNavigationSettingsFragment;
 import com.android.settings.gestures.OneHandedSettings;
 import com.android.settings.gestures.PickupGestureSettings;
 import com.android.settings.gestures.PowerMenuSettings;
+import com.android.settings.gestures.GestureSettings;
 import com.android.settings.gestures.SwipeToNotificationSettings;
 import com.android.settings.gestures.SystemNavigationGestureSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
@@ -404,6 +405,7 @@ public class SettingsGateway {
             ZenModesListFragment.class.getName(),
             ZenModeFragment.class.getName(),
             RunningServices.class.getName(),
+            GestureSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -451,5 +453,7 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SystemGestureActivity.class.getName(),
+            Settings.SystemResetActivity.class.getName(),
     };
 }
