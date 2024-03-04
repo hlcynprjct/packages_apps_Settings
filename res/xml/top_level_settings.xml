@@ -142,7 +142,7 @@
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 
     <Preference
-        android:icon="@drawable/ic_dashboard_safety"
+        android:icon="@drawable/ic_dashboard_privacy"
         android:key="top_level_safety_center"
         android:order="-55"
         android:title="@string/safety_center_title"
@@ -153,7 +153,7 @@
 
     <Preference
         android:fragment="com.android.settings.security.SecuritySettings"
-        android:icon="@drawable/ic_dashboard_security"
+        android:icon="@drawable/ic_dashboard_privacy"
         android:key="top_level_security"
         android:order="-50"
         android:title="@string/security_settings_title"
