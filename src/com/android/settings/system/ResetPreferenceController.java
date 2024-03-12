@@ -35,6 +35,7 @@ public class ResetPreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return UNSUPPORTED_ON_DEVICE;
+        return mContext.getResources().getBoolean(R.bool.config_show_reset_dashboard)
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 }

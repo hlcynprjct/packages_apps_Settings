@@ -34,10 +34,10 @@ class HalcyonSystemOptController(context: Context) : AbstractPreferenceControlle
         val HalcyonSystemOpt = screen.findPreference<LayoutPreference>(KEY_HALCYON_SYSOPT)!!
 
         val clickMap = mapOf(
-            R.id.language_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$LanguageAndInputSettingsActivity")),
-            R.id.gesture_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$SystemGestureActivity")),
+            R.id.language_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$LanguageSettingsActivity")),
+            R.id.keyboard_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$KeyboardSettingsActivity")),
             R.id.time_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$DateTimeSettingsActivity")),
-            R.id.reset_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$SystemResetActivity"))
+            R.id.gesture_settings to Intent().setComponent(ComponentName("com.android.settings", "com.android.settings.Settings\$SystemGestureActivity"))
         )
 
         clickMap.forEach { (id, intent) ->
