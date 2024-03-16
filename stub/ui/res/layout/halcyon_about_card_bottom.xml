@@ -45,6 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/halcyon_cardview_padding"
+                android:paddingEnd="128dp"
                 android:singleLine="true"
                 android:maxLines="1"
                 style="@style/halcyon_about_cardview_text_primary" />
@@ -60,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
+                android:paddingStart="128dp"
                 android:gravity="center_vertical"
                 android:layout_marginStart="18dp"
                 android:maxLines="1"
