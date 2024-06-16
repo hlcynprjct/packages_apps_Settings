@@ -23,6 +23,7 @@
     <dimen name="halcyon_pref_vert">5.5dp</dimen>
     <dimen name="halcyon_card_radius">22dp</dimen>
     <dimen name="halcyon_card_side_margin">18dp</dimen>
+    <dimen name="halcyon_system_tile_content_margin">12dp</dimen>
 
     <!-- Dashboard icons -->
     <dimen name="halcyon_top_icon_max">36dp</dimen>

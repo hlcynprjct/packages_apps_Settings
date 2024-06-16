@@ -26,65 +26,79 @@
         android:order="-999"
         android:selectable="false" />
 
-    <Preference
-        android:key="trackpad_settings"
-        android:title="@string/trackpad_mouse_settings"
-        android:summary="@string/trackpad_settings_summary"
-        android:icon="@drawable/ic_settings_trackpad"
-        android:order="-254"
-        android:fragment="com.android.settings.inputmethod.TrackpadSettings"
-        settings:controller="com.android.settings.inputmethod.TrackpadSettingsController"/>
+    <PreferenceCategory
+        android:title="@string/more_settings_title"
+        android:order="-998">
 
-    <Preference
-        android:key="gesture_settings"
-        android:title="@string/gesture_preference_title"
-        android:icon="@drawable/ic_settings_gestures"
-        android:order="-250"
-        android:fragment="com.android.settings.gestures.GestureSettings"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+        <Preference
+            android:key="trackpad_settings"
+            android:title="@string/trackpad_settings"
+            android:summary="@string/trackpad_settings_summary"
+            android:icon="@drawable/ic_settings_trackpad"
+            android:order="-254"
+            android:fragment="com.android.settings.inputmethod.TrackpadSettings"
+            settings:controller="com.android.settings.inputmethod.TrackpadSettingsController"/>
 
-    <Preference
-        android:key="date_time_settings"
-        android:title="@string/date_and_time"
-        android:icon="@drawable/ic_settings_date_time"
-        android:order="-240"
-        android:fragment="com.android.settings.datetime.DateTimeSettings"
-        settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
+        <Preference
+            android:key="gesture_settings"
+            android:title="@string/gesture_preference_title"
+            android:icon="@drawable/ic_settings_gestures"
+            android:order="-250"
+            android:fragment="com.android.settings.gestures.GestureSettings"
+            settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
 
-    <!-- System updates -->
-    <Preference
-        android:key="additional_system_update_settings"
-        android:title="@string/additional_system_update_settings_list_item_title"
-        android:order="-59"
-        settings:controller="com.android.settings.system.AdditionalSystemUpdatePreferenceController">
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="@string/additional_system_update"
-                android:targetClass="@string/additional_system_update_menu"/>
-    </Preference>
+        <Preference
+            android:key="date_time_settings"
+            android:title="@string/date_and_time"
+            android:icon="@drawable/ic_settings_date_time"
+            android:order="-240"
+            android:fragment="com.android.settings.datetime.DateTimeSettings"
+            settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
 
-    <Preference
-        android:key="system_update_settings"
-        android:title="@string/system_update_settings_list_item_title"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_system_update"
-        android:order="-58"
-        settings:keywords="@string/keywords_system_update_settings"
-        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
-        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
-    </Preference>
+        <!-- System updates -->
+        <Preference
+            android:key="additional_system_update_settings"
+            android:title="@string/additional_system_update_settings_list_item_title"
+            android:order="-59"
+            settings:controller="com.android.settings.system.AdditionalSystemUpdatePreferenceController">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="@string/additional_system_update"
+                    android:targetClass="@string/additional_system_update_menu"/>
+        </Preference>
 
-    <Preference
-        android:key="system_multiuser"
-        android:title="@string/user_settings_title"
-        android:icon="@drawable/ic_settings_multiuser"
-        android:order="-45"
-        android:fragment="com.android.settings.users.UserSettings"
-        settings:controller="com.android.settings.users.MultiUserPreferenceController"/>
+        <Preference
+            android:key="system_update_settings"
+            android:title="@string/system_update_settings_list_item_title"
+            android:summary="@string/summary_placeholder"
+            android:icon="@drawable/ic_system_update"
+            android:order="-58"
+            settings:keywords="@string/keywords_system_update_settings"
+            settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
+        </Preference>
 
-    <com.android.settings.spa.preference.ComposePreference
-        android:key="developer_options"
-        android:order="-40"
-        settings:controller="com.android.settings.system.DeveloperOptionsController"/>
+        <Preference
+            android:key="system_multiuser"
+            android:title="@string/user_settings_title"
+            android:icon="@drawable/ic_settings_multiuser"
+            android:order="-45"
+            android:fragment="com.android.settings.users.UserSettings"
+            settings:controller="com.android.settings.users.MultiUserPreferenceController"/>
+
+        <com.android.settings.spa.preference.ComposePreference
+            android:key="developer_options"
+            android:order="-40"
+            settings:controller="com.android.settings.system.DeveloperOptionsController"/>
+
+        <Preference
+            android:key="reset_dashboard"
+            android:title="@string/reset_dashboard_title"
+            android:icon="@drawable/ic_restore"
+            android:order="-30"
+            android:fragment="com.android.settings.system.ResetDashboardFragment"
+            settings:controller="com.android.settings.system.ResetPreferenceController"/>
+
+    </PreferenceCategory>
 
     <Preference
         android:key="device_diagnostics"
@@ -100,4 +114,5 @@
         android:order="-30"
         android:fragment="com.android.settings.system.ResetDashboardFragment"
         settings:controller="com.android.settings.system.ResetPreferenceController"/>
+
 </PreferenceScreen>

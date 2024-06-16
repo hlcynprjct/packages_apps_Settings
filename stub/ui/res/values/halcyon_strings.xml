@@ -29,4 +29,7 @@
 
         <!-- My Device - Phone Number Category -->
     <string name="sim_num_info_cat">Phone number</string>
+
+    <!-- System Category -->
+    <string name="more_settings_title">More settings</string>
 </resources>

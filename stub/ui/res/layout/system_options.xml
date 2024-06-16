@@ -18,7 +18,7 @@
     android:orientation="vertical" 
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="48dp"
+    android:layout_marginBottom="96dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
     
     <LinearLayout 
@@ -29,18 +29,17 @@
         <LinearLayout 
             android:orientation="horizontal" 
             android:layout_width="fill_parent" 
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content">
             <LinearLayout 
                 android:id="@+id/language_settings"
                 android:background="@drawable/tile_pref_background"
-                android:gravity="center"
-                android:orientation="vertical" 
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:paddingTop="20.0dip" 
                 android:paddingBottom="20.0dip" 
-                android:layout_marginLeft="@dimen/halcyon_card_side_margin" 
-                android:paddingStart="@dimen/halcyon_card_side_margin" 
-                android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:layout_marginLeft="@dimen/halcyon_card_side_margin"
+                android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                 android:layout_width="0dp" 
                 android:layout_height="match_parent" 
                 android:layout_weight="1">
@@ -51,40 +50,40 @@
                     <TextView 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5.0dip"
                         android:ellipsize="marquee"
                         android:singleLine="true"
                         android:text="@string/languages_settings"
-                        android:paddingTop="12.0dip" 
+                        android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                        android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                         style="@style/TextAppearance.halcyonTileTitle"/>
             </LinearLayout>
 
             <LinearLayout 
                 android:id="@+id/keyboard_settings"
                 android:background="@drawable/tile_pref_background"
-                android:gravity="center"
-                android:orientation="vertical" 
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:paddingTop="20.0dip" 
                 android:paddingBottom="20.0dip" 
                 android:layout_marginLeft="@dimen/halcyon_system_menu_margin" 
                 android:layout_marginRight="@dimen/halcyon_card_side_margin"
-                android:paddingStart="@dimen/halcyon_card_side_margin" 
-                android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                 android:layout_width="0dp" 
                 android:layout_height="match_parent" 
                 android:layout_weight="1">
                     <ImageView
                         android:src="@drawable/ic_halcyon_keyboard"
-                        android:layout_width="@dimen/halcyon_hw_info_icons"
-                        android:layout_height="@dimen/halcyon_hw_info_icons" />
+                        android:layout_width="@dimen/halcyon_system_menu_icons"
+                        android:layout_height="@dimen/halcyon_system_menu_icons" />
                     <TextView 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5.0dip"
                         android:ellipsize="marquee"
                         android:singleLine="true"
                         android:text="@string/keyboard_settings"
-                        android:paddingTop="12.0dip" 
+                        android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                        android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                         style="@style/TextAppearance.halcyonTileTitle"/>
             </LinearLayout>
         </LinearLayout>
@@ -97,60 +96,60 @@
             <LinearLayout 
                 android:id="@+id/time_settings"
                 android:background="@drawable/tile_pref_background"
-                android:gravity="center"
-                android:orientation="vertical" 
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:paddingTop="20.0dip" 
                 android:paddingBottom="20.0dip" 
-                android:layout_marginLeft="@dimen/halcyon_card_side_margin" 
-                android:paddingStart="@dimen/halcyon_card_side_margin" 
-                android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:layout_marginLeft="@dimen/halcyon_card_side_margin"
+                android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                 android:layout_width="0dp" 
                 android:layout_height="match_parent" 
                 android:layout_weight="1">
                     <ImageView
                         android:src="@drawable/ic_halcyon_time"
-                        android:layout_width="@dimen/halcyon_hw_info_icons"
-                        android:layout_height="@dimen/halcyon_hw_info_icons" />
+                        android:layout_width="@dimen/halcyon_system_menu_icons"
+                        android:layout_height="@dimen/halcyon_system_menu_icons" />
                     <TextView 
-                        android:id="@+id/battery_size_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5.0dip"
                         android:ellipsize="marquee"
                         android:singleLine="true"
                         android:text="@string/date_and_time"
-                        android:paddingTop="12.0dip" 
+                        android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                        android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                         style="@style/TextAppearance.halcyonTileTitle"/>
             </LinearLayout>
 
             <LinearLayout 
                 android:id="@+id/gesture_settings"
                 android:background="@drawable/tile_pref_background"
-                android:gravity="center"
-                android:orientation="vertical" 
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:paddingTop="20.0dip" 
                 android:paddingBottom="20.0dip" 
                 android:layout_marginLeft="@dimen/halcyon_system_menu_margin" 
                 android:layout_marginRight="@dimen/halcyon_card_side_margin"
-                android:paddingStart="@dimen/halcyon_card_side_margin" 
-                android:paddingEnd="@dimen/halcyon_card_side_margin"
+                android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                 android:layout_width="0dp" 
                 android:layout_height="match_parent" 
                 android:layout_weight="1">
                     <ImageView
                         android:src="@drawable/ic_halcyon_gesture"
-                        android:layout_width="@dimen/halcyon_hw_info_icons"
-                        android:layout_height="@dimen/halcyon_hw_info_icons" />
+                        android:layout_width="@dimen/halcyon_system_menu_icons"
+                        android:layout_height="@dimen/halcyon_system_menu_icons" />
                     <TextView 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5.0dip"
                         android:ellipsize="marquee"
                         android:singleLine="true"
                         android:text="@string/gesture_preference_title"
-                        android:paddingTop="12.0dip" 
+                        android:paddingStart="@dimen/halcyon_system_tile_content_margin" 
+                        android:paddingEnd="@dimen/halcyon_system_tile_content_margin"
                         style="@style/TextAppearance.halcyonTileTitle"/>
             </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
