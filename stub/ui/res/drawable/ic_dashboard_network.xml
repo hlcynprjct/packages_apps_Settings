@@ -28,6 +28,6 @@
         android:width="@dimen/dashboard_tile_foreground_image_size"
         android:height="@dimen/dashboard_tile_foreground_image_size"
         android:gravity="center"
-        android:drawable="@drawable/ic_settings_wireless"
+        android:drawable="@drawable/halcyon_ic_settings_wireless"
         android:tint="?android:attr/textColorSecondary"/>
 </layer-list>
