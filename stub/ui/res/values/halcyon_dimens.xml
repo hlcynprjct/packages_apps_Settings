@@ -28,8 +28,8 @@
     <!-- Dashboard icons -->
     <dimen name="halcyon_top_icon_max">36dp</dimen>
     <dimen name="halcyon_top_icon_home">46dp</dimen>
-    <dimen name="dashboard_tile_image_size">42dp</dimen>
-    <dimen name="dashboard_tile_foreground_image_size">14dp</dimen>
+    <dimen name="dashboard_tile_image_size">46dp</dimen>
+    <dimen name="dashboard_tile_foreground_image_size">16dp</dimen>
 
     <!-- About Phone Header icons -->
     <dimen name="halcyon_hw_info_icons">30dp</dimen>
