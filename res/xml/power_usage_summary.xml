@@ -55,25 +55,20 @@
         settings:controller="com.android.settings.fuelgauge.BatterySaverController" />
 
     <Preference
+        android:key="charging_control"
+        android:title="@string/charging_control_title"
+        android:summary="@string/charging_control_summary"
+        android:fragment="com.android.settings.halcyon.health.ChargingControlSettings"
+        settings:layout="@layout/halcyon_pref_card_middle"
+	settings:controller="com.android.settings.halcyon.notificationlight.ChargingControlPreferenceController" />
+
+    <Preference
         android:fragment="com.android.settings.fuelgauge.SmartBatterySettings"
         android:key="smart_battery_manager"
         android:title="@string/smart_battery_manager_title"
         settings:layout="@layout/halcyon_pref_card_bottom"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController"
         settings:keywords="@string/keywords_battery_adaptive_preferences" />
-
-        android:key="battery_percentage"
-        android:title="@string/battery_percentage"
-        android:summary="@string/battery_percentage_description"
-        settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
-
-    <!-- Charging control -->
-    <Preference
-        android:key="charging_control"
-        android:title="@string/charging_control_title"
-        android:summary="@string/charging_control_summary"
-        android:fragment="com.android.settings.halcyon.health.ChargingControlSettings"
-        settings:controller="com.android.settings.halcyon.notificationlight.ChargingControlPreferenceController" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
