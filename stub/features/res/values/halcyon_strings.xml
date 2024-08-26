@@ -100,4 +100,11 @@
     <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
     <string name="charging_control_limit_title">Limit</string>
 
+    <!-- Low Gamma -->
+    <string name="low_gamma_title">Gamma correction</string>
+    <string name="low_gamma_summary">Enable or disable gamma correction for low brightness.</string>
+    <string name="systemui_restart_title">Restart SystemUI</string>
+    <string name="systemui_restart_message">Do you want to restart SystemUI to apply changes?</string>
+    <string name="ok">Restart</string>
+    <string name="cancel">Cancel</string>
 </resources>
