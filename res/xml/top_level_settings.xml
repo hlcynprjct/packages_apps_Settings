@@ -78,7 +78,7 @@
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
 
     <Preference
-        android:fragment="com.android.settings.fuelgauge.batteryusage.PowerUsageSummary"
+        android:fragment="com.android.settings.fuelgauge.batteryusage.HalcyonBatterySummary"
         android:icon="@drawable/ic_dashboard_battery"
         android:key="top_level_battery"
         android:order="-130"

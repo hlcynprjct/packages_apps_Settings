@@ -30,7 +30,7 @@ import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
-import com.android.settingslib.widget.UsageProgressBarPreference;
+import com.android.settingslib.widget.BatteryUsageProgressBarPreference;
 
 /** Controller that update the battery header view */
 public class BatteryHeaderPreferenceController extends BasePreferenceController
@@ -41,7 +41,7 @@ public class BatteryHeaderPreferenceController extends BasePreferenceController
     private static final int BATTERY_MAX_LEVEL = 100;
 
     @VisibleForTesting BatteryStatusFeatureProvider mBatteryStatusFeatureProvider;
-    @VisibleForTesting UsageProgressBarPreference mBatteryUsageProgressBarPref;
+    @VisibleForTesting BatteryUsageProgressBarPreference mBatteryUsageProgressBarPref;
 
     private final PowerManager mPowerManager;
     private final BatterySettingsFeatureProvider mBatterySettingsFeatureProvider;

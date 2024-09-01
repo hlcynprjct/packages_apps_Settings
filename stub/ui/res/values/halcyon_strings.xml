@@ -36,4 +36,8 @@
     <!-- More category -->
     <string name="more_preference_title">More</string>
     <string name="more_battery_title">More battey options</string>
+
+    <!-- Battery Summary -->
+    <string name="tile_battery_info_title">Battery Info</string>
+
 </resources>
