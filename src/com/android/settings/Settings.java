@@ -523,4 +523,10 @@ public class Settings extends SettingsActivity {
      */
     public static class SystemGestureActivity extends SettingsActivity { /* empty */ }
     public static class SystemResetActivity extends SettingsActivity { /* empty */ }
+
+    /** Halcyon battery settings. */
+    public static class PowerUsageActivity extends SettingsActivity { /* empty */ }
+    public static class ChargingControlActivity extends SettingsActivity { /* empty */ }
+    public static class SmartBatterySettingsActivity extends SettingsActivity { /* empty */ }
+    public static class BatteryInfoActivity extends SettingsActivity { /* empty */ }
 }

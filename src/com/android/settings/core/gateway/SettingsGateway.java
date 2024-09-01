@@ -117,7 +117,9 @@ import com.android.settings.enterprise.EnterprisePrivacySettings;
 import com.android.settings.fuelgauge.AdvancedPowerUsageDetail;
 import com.android.settings.fuelgauge.batterysaver.BatterySaverScheduleSettings;
 import com.android.settings.fuelgauge.batterysaver.BatterySaverSettings;
+import com.android.settings.fuelgauge.batteryusage.PowerUsageAdvanced;
 import com.android.settings.fuelgauge.batteryusage.PowerUsageSummary;
+import com.android.settings.fuelgauge.SmartBatterySettings;
 import com.android.settings.gestures.ButtonNavigationSettingsFragment;
 import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
@@ -129,6 +131,7 @@ import com.android.settings.gestures.PowerMenuSettings;
 import com.android.settings.gestures.GestureSettings;
 import com.android.settings.gestures.SwipeToNotificationSettings;
 import com.android.settings.gestures.SystemNavigationGestureSettings;
+import com.android.settings.halcyon.health.ChargingControlSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
 import com.android.settings.inputmethod.KeyboardLayoutPickerFragment;
 import com.android.settings.inputmethod.KeyboardSettings;
@@ -406,6 +409,9 @@ public class SettingsGateway {
             ZenModeFragment.class.getName(),
             RunningServices.class.getName(),
             GestureSettings.class.getName(),
+            SmartBatterySettings.class.getName(),
+            PowerUsageAdvanced.class.getName(),
+            ChargingControlSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -455,5 +461,9 @@ public class SettingsGateway {
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.SystemGestureActivity.class.getName(),
             Settings.SystemResetActivity.class.getName(),
+            Settings.PowerUsageActivity.class.getName(),
+            Settings.ChargingControlActivity.class.getName(),
+            Settings.SmartBatterySettingsActivity.class.getName(),
+            Settings.BatteryInfoActivity.class.getName(),
     };
 }

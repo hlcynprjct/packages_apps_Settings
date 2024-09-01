@@ -60,7 +60,7 @@
         android:summary="@string/charging_control_summary"
         android:fragment="com.android.settings.halcyon.health.ChargingControlSettings"
         settings:layout="@layout/halcyon_pref_card_middle"
-	settings:controller="com.android.settings.halcyon.notificationlight.ChargingControlPreferenceController" />
+	    settings:controller="com.android.settings.halcyon.notificationlight.ChargingControlPreferenceController" />
 
     <Preference
         android:fragment="com.android.settings.fuelgauge.SmartBatterySettings"
