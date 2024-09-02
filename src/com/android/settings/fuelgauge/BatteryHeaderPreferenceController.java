@@ -28,9 +28,9 @@ import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.fuelgauge.batterytip.tips.BatteryTip;
+import com.android.settings.halcyon.widget.BatteryUsageProgressBarPreference;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
-import com.android.settingslib.widget.BatteryUsageProgressBarPreference;
 
 /** Controller that update the battery header view */
 public class BatteryHeaderPreferenceController extends BasePreferenceController
@@ -166,11 +166,6 @@ public class BatteryHeaderPreferenceController extends BasePreferenceController
         mBatteryUsageProgressBarPref.setUsageSummary(formatBatteryPercentageText(batteryLevel));
         mBatteryUsageProgressBarPref.setPercent(batteryLevel, BATTERY_MAX_LEVEL);
 
-        if (chargeCounterUah > 0) {
-            int chargeCounter = chargeCounterUah / 1_000;
-            mBatteryUsageProgressBarPref.setTotalSummary(
-                    formatBatteryChargeCounterText(chargeCounter));
-        }
     }
 
     /** Update summary when battery tips changed. */
