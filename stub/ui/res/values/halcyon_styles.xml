@@ -47,7 +47,7 @@
     </style>
 
     <style name="TextAppearance_halcyonCoolBranding">
-        <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:textColor">@*android:color/accent_device_default_dark</item>
         <item name="android:textSize">48dp</item>
         <item name="android:textStyle">italic</item>
         <item name="android:fontFamily">@font/google_sans_bold</item>
