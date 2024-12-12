@@ -15,5 +15,5 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:alpha="0.35"
-          android:color="@android:color/system_neutral2_700"/>
+          android:color="@color/halcyon_base_bg"/>
 </selector>
