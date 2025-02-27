@@ -215,13 +215,12 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         if (Flags.homepageRevamp()) {
             return;
         }
-        int tintColor = Utils.getHomepageIconColor(getContext());
-        iteratePreferences(preference -> {
-            Drawable icon = preference.getIcon();
-            if (icon != null) {
-                icon.setTint(tintColor);
+        for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
+            Preference pref = getPreferenceScreen().getPreference(i);
+            if (pref.isVisible() && pref.getTitle() != null) {
+                pref.setLayoutResource(R.layout.halcyon_dashboard_card);
             }
-        });
+        }
     }
 
     @Override

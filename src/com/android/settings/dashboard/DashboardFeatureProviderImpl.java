@@ -436,7 +436,7 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             });
             return;
         }
-
+                     
         // Use preference context instead here when get icon from Tile, as we are using the context
         // to get the style to tint the icon. Using mContext here won't get the correct style.
         final Icon tileIcon = tile.getIcon(preference.getContext());
@@ -454,14 +454,12 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             preference.setIcon(null);
             return;
         }
-        // Tint homepage icons
-        if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
-            // Skip tinting and Adaptive Icon transformation for homepage account type raw icons
-            if (TextUtils.equals(tile.getGroupKey(), "top_level_account_category")
-                    && iconPackage == null) {
-                preference.setIcon(iconDrawable);
-                return;
-            }
+
+        if ("com.google.android.gms".equals(tile.getPackageName()) && "Google".equalsIgnoreCase(tile.getTitle(preference.getContext()).toString())) {
+            iconDrawable = preference.getContext().getDrawable(R.drawable.ic_dashboard_google);
+        } else if ("com.google.android.apps.wellbeing".equals(tile.getPackageName())) {
+            iconDrawable = preference.getContext().getDrawable(R.drawable.ic_dashboard_wellbeing);
+        } else if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
             iconDrawable.setTint(Utils.getHomepageIconColor(preference.getContext()));
         }
 

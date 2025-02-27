@@ -4,9 +4,14 @@
     <!-- Cards -->
     <dimen name="halcyon_cardview_padding">16dp</dimen>
     <dimen name="halcyon_top_icon">24dp</dimen>
-    <dimen name="halcyon_top_icon_max">24dp</dimen>
+    <dimen name="halcyon_top_icon_home_max">52.5dp</dimen>
     <dimen name="halcyon_cardview_margin_list">16dip</dimen>
     <dimen name="halcyon_pref_vert">5.5dp</dimen>
     <dimen name="halcyon_card_radius">22dp</dimen>
 
+    <!-- Dashboard icons -->
+    <dimen name="halcyon_top_icon_max">24dp</dimen>
+    <dimen name="halcyon_top_icon_home">42dp</dimen>
+    <dimen name="dashboard_tile_image_size">36dp</dimen>
+    <dimen name="dashboard_tile_foreground_image_size">18dp</dimen>
 </resources>
